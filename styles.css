@@ -59,3 +59,16 @@ p {
  h1{
     text-align: center;
  }
+ main ul {
+    font-size: large;
+ }
+
+ section ul {
+  margin: 20px 0;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+section ul li {
+  margin-bottom: 12px;
+}
