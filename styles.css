@@ -1,1 +1,54 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: fit-content; /* or a fixed width for your header if needed */
+  margin: 0 auto;
+}
 
+header img {
+  max-height: 300px;
+  display: block;
+}
+
+header nav {
+  position: absolute;
+  left: 10%;
+  bottom: 16px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(44,56,120,0.8);
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: background .2s;
+}
+
+header nav a:hover {
+  background: rgba(44,56,120,1);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: rgba(250, 245, 210, 0.8);
+
+}
