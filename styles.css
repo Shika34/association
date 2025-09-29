@@ -52,3 +52,10 @@ main {
     background: rgba(250, 245, 210, 0.8);
 
 }
+
+p {
+    font-size: large;
+}
+ h1{
+    text-align: center;
+ }
