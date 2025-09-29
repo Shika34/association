@@ -43,6 +43,39 @@ header nav a:hover {
   background: rgba(44, 56, 120, 1);
 }
 
+/* Adaptation responsive pour petits écrans */
+@media (max-width: 600px) {
+  header {
+    width: 100%;
+    padding: 10px;
+  }
+  header img {
+    max-height: 200px;
+    width: auto;
+  }
+  header nav {
+    position: static;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  header nav li {
+    margin: 0;
+  }
+  header nav a {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    background: rgba(44, 56, 120, 0.9);
+    border-radius: 10px;
+  }
+}
+
 /* BODY  */
 main {
   display: flex;
@@ -73,7 +106,7 @@ section ul li {
   margin-bottom: 12px;
 }
 
-article h1 {
+h1 {
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 20px;
@@ -94,10 +127,20 @@ article {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* disposition en colone du formulaire */
+section#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+
 /* FOOTER */
 footer {
-  background:  rgba(250, 245, 210, 0.8);
-  color: #333; 
+  background: rgba(250, 245, 210, 0.8);
+  color: #333;
   text-align: center;
   padding: 20px 30px;
   font-family: Arial, sans-serif;
@@ -108,14 +151,14 @@ footer {
 
 /* Liens dans le footer */
 footer a {
-  color: #111510; 
+  color: #111510;
   text-decoration: underline;
   font-weight: 600;
   transition: color 0.25s ease;
 }
 
 footer a:hover {
-  color: #4a72b8; 
+  color: #4a72b8;
 }
 
 /* Responsive */
